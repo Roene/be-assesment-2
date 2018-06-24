@@ -51,7 +51,7 @@ express()
  	.get('/log-out', logout)
   	.get('/:id', profile)
   	.get('/dashboard', dashboard)
-  	.get('/delete/id', remove)
+  	.get('/delete/:id', remove)
 
   	.use(notFound)
 
@@ -244,7 +244,8 @@ function remove(req, res, next) {
 		if (err) {
 			next(err)
 		} else {
-			res.json({status: 'ok'})
+			req.session.destroy()
+			res.redirect('/')
 		}
 	}
 }

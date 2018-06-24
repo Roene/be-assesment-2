@@ -30,7 +30,9 @@
     		<p><span>Omschrijving:</span> <%= data.description %></p>
 
     		<% if (user) { %>
-    		<button id="js-remove" data-id="<%= data.id %>">Verwijder account</button>
+    		 <form action="/delete/<%= data.id %>">
+    			<button type="submit" id="js-remove">Verwijder account</button>
+    		</form>
     		<% } %>
 		</section>
 
