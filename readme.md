@@ -13,7 +13,7 @@ This is a list of things in want to do in this project.
 - [x] Create an account
 - [x] Login / Logout
 - [x] View profile(s)
-- [ ] Delete account
+- [x] Delete account
 - [ ] Edit own profile information
 - [ ] Find matches
 - [ ] Send a chat message
