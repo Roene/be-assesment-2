@@ -245,7 +245,7 @@ function remove(req, res, next) {
 			next(err)
 		} else {
 			req.session.destroy()
-			res.redirect('/')
+			res.redirect('dashboard')
 		}
 	}
 }
