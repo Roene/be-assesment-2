@@ -1,0 +1,41 @@
+<% include head.ejs %>
+
+<header>
+
+	<a href="/dashboard">Terug</a>
+
+	<section>
+			
+		<% if (user) { %>
+			<p>Welkom <%= user.username %></p>
+			<a class="default color_red" href="/">Uitloggen</a>
+		<% } %>
+
+	</section>
+
+</header>
+
+<body>
+
+	<main>
+
+		<section>
+
+			<h2>Profiel van <%= data.username %></h2>
+
+    		<img src="/upload/<%= data.picture %>" alt="profiel foto">
+    		<p><span>Naam:</span> <%= data.username %></p>
+    		<p><span>Leeftijd:</span> <%= data.age %> </p>
+    		<p><span>Club:</span> <%= data.club %></p>
+    		<p><span>Omschrijving:</span> <%= data.description %></p>
+
+    		<% if (user) { %>
+    		<button id="js-remove" data-id="<%= data.id %>">Verwijder account</button>
+    		<% } %>
+		</section>
+
+	</main>
+
+</body>
+
+<% include tail.ejs %>

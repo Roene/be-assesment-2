@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/* ---------- GLOBAL ---------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-color: hsla(0,0%,80%,0.70);
+    background-blend-mode: overlay;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+h3 > a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+p > span {
+	font-weight: 500;
+	font-weight: bold;
+}
+
+.default {
+	display: block;
+	color: #ffffff;
+	border: 0;
+	margin: 0.5em;
+	padding: 1em 2em;
+	border-radius: 2em;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+}
+
+.color_blue {
+	background-color: #002e62;
+	box-shadow: inset 0 -0.1875rem 0.0625rem #001b3a;
+}
+
+.color_blue:active {
+	background-color: #001b3a;
+}
+
+.color_red {
+	background-color: #e61b46; 
+	box-shadow: inset 0 -0.1875rem 0.0625rem #c60d36;
+}
+
+.color_red:active {
+	background-color: #c60d36;
+}
+
+#js-remove{
+	display: block;
+	color: #ffffff;
+	background-color: red;
+	border: 0;
+	margin: 0.5em;
+	padding: 1em 2em;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0 2em;
+	background-color: #FAFAFA !important;
+	height: 12vh;
+}
+
+header > a {
+	color: #e61b46; 
+	margin: 0 auto 0 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+header > section  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0 0 0 auto;
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0 0 0 auto;
+}
+
+main > section {
+	width: 23em;
+}
+
+main > section > img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+form > label {
+	display: block;
+	margin: 0.5em 0em;
+	width: max-content;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 0.9em;
+}
+
+form > input {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+form > button {
+	width: 75%;
+	margin: 2em 0 0 0 !important;
+}
+
+form > button:hover {
+	cursor: pointer;
+}

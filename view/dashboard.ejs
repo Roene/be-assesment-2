@@ -1,0 +1,40 @@
+<% include head.ejs %>
+
+<header>
+
+		<section>
+			
+		<% if (user) { %>
+			<p>Welkom <%= user.username %></p>
+			<a class="default color_red" href="/">Uitloggen</a>
+		<% } %>
+
+		</section>
+
+</header>
+
+<body>
+
+	<main>
+
+		<section>
+
+			<h2>Dashboard</h2>
+			<p>Matches op basis van je favorieten voetbalclub</p>
+
+		<% for (var index = 0; index < data.length; index++) { %>
+			
+			<h3><%= data[index].username %></h3>
+			<img src="/upload/<%= data[index].picture %>"" alt="profiel foto">
+			<p><span>Club:</span> <%= data[index].club %></p>
+			<p><span>Omschrijving:</span> <%= data[index].description %></p>
+
+			<a href="/<%= data[index].id %>" class="default color_blue">Bezoek profiel</a>
+		<% } %>
+		</section>
+
+	</main>
+
+</body>
+
+<% include tail.ejs %>
