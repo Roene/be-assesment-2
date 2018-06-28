@@ -206,7 +206,7 @@ function dashboard(req, res, next) {
 
 // Render profile.ejs when you go to /:id
 function profile(req, res, next) {
-	// Store the request id in the variabele
+	// Store the request id in the variabele. The id you get is from the url like localhost:3400/1
 	var id = req.params.id;
 
 	// Make connection to the database and check if the id exist if it exist start the function done
